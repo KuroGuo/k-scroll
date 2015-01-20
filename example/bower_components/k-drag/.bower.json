@@ -1,0 +1,30 @@
+{
+  "name": "k-drag",
+  "homepage": "https://github.com/kuroguo/k-drag",
+  "authors": [
+    "KuroGuo <413298956@qq.com>"
+  ],
+  "description": "drag component",
+  "main": "dist/k-drag.min.js",
+  "keywords": [
+    "k-drag",
+    "kuro"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "f2f9f69498",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f2f9f6949845ebcd84fefd7042b47d501b9885a7"
+  },
+  "_source": "git://github.com/KuroGuo/k-drag.git",
+  "_target": "*",
+  "_originalSource": "k-drag"
+}

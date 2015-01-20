@@ -1,0 +1,35 @@
+{
+  "name": "k-scroll",
+  "homepage": "https://github.com/kuroguo/k-scroll",
+  "authors": [
+    "KuroGuo <413298956@qq.com>"
+  ],
+  "description": "scroll component",
+  "main": "dist/k-scroll.js",
+  "keywords": [
+    "k-scroll",
+    "kuro"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "k-drag": "*",
+    "velocity": "~1.2.1"
+  },
+  "_release": "5c84ea1303",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5c84ea1303c02fb7c4455af1c9651b6e1a292875"
+  },
+  "_source": "git://github.com/KuroGuo/k-scroll.git",
+  "_target": "*",
+  "_originalSource": "k-scroll",
+  "_direct": true
+}
