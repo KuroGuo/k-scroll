@@ -12,7 +12,7 @@ $ bower install k-scroll
 
 ```html
 <link rel="stylesheet" href="bower_components/k-scroll/dist/k-scroll.css">
-<div id="list1" class="my-list k-scroller-wrapper">
+<div id="list" class="k-scroller-wrapper">
   <ul class="k-scroller">
     <script>
       for (var i = 0; i < 100; i++) {
@@ -26,8 +26,8 @@ $ bower install k-scroll
 <script src="bower_components/velocity/velocity.min.js"></script>
 <script src="bower_components/k-scroll/dist/k-scroll.js"></script>
 <script>
-  var list1 = document.querySelector('#list1');
+  var list = document.querySelector('#list');
 
-  kScroll.bind(list1);
+  kScroll.bind(list);
 </script>
 ```
