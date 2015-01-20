@@ -2,7 +2,7 @@
 
 ### Quick Examples
 
-<a href="http://kuroguo.github.io/k-scroll/example/", target="_blank">EXAMPLE</a>
+<a href="http://kuroguo.github.io/k-scroll/example/" target="_blank">EXAMPLE</a>
 
 ```html
 <link rel="stylesheet" type="text/css" href="../src/k-scroll.css">
