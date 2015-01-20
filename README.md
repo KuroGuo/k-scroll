@@ -5,7 +5,7 @@
 <a href="http://kuroguo.github.io/k-scroll/example/" target="_blank">example</a>
 
 ```html
-<link rel="stylesheet" type="text/css" href="bower_components/k-scroll/dist/k-scroll.css">
+<link rel="stylesheet" href="bower_components/k-scroll/dist/k-scroll.css">
 <div id="list1" class="my-list k-scroller-wrapper">
   <ul class="k-scroller">
     <script>
