@@ -1,4 +1,4 @@
-## K-drag
+## K-scroll
 
 ### Quick Examples
 
