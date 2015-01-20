@@ -18,5 +18,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "k-drag": "*",
+    "velocity": "~1.2.1"
+  }
 }
