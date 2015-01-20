@@ -26,10 +26,6 @@
     var lastFrameTime;
     var frameToken;
     var dragEndvScrollTop;
-    var $pullDownHint;
-    var $pullUpHint;
-    var $pullDownHintText;
-    var $pullUpHintText;
     var isDrag;
 
     var currentScrollTop = 0; // 当前纵向滚动值
