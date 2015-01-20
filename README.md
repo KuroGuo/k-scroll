@@ -16,7 +16,6 @@
   </ul>
 </div>
 
-<script src="bower_components/k-tap/dist/k-tap.js"></script>
 <script src="bower_components/k-drag/dist/k-drag.js"></script>
 <script src="bower_components/velocity/velocity.min.js"></script>
 <script src="bower_components/k-scroll/dist/k-scroll.js"></script>
