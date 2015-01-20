@@ -1,5 +1,11 @@
 ## K-scroll
 
+### Install
+
+```bash
+$ bower install k-scroll
+```
+
 ### Quick Example
 
 <a href="http://kuroguo.github.io/k-scroll/example/" target="_blank">example</a>
