@@ -1,0 +1,31 @@
+{
+  "name": "k-tap",
+  "homepage": "https://github.com/kuroguo/k-tap",
+  "authors": [
+    "KuroGuo <413298956@qq.com>"
+  ],
+  "description": "tap component",
+  "main": "dist/k-tap.js",
+  "keywords": [
+    "k-tap",
+    "kuro"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "f287361123",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f287361123cdb5848ec84385f220f7bda9c3af7a"
+  },
+  "_source": "git://github.com/KuroGuo/k-tap.git",
+  "_target": "*",
+  "_originalSource": "k-tap",
+  "_direct": true
+}
