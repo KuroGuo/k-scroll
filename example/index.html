@@ -73,6 +73,10 @@
   <script src="bower_components/velocity/velocity.min.js"></script>
   <script src="bower_components/k-scroll/dist/k-scroll.js"></script>
   <script>
+    document.addEventListener('touchmove', function (e) {
+      e.preventDefault();
+    });
+
     var list1 = document.querySelector('#list1');
     var list2 = document.querySelector('#list2');
 
