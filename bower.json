@@ -1,0 +1,22 @@
+{
+  "name": "k-scroll",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kuroguo/k-scroll",
+  "authors": [
+    "KuroGuo <413298956@qq.com>"
+  ],
+  "description": "scroll component",
+  "main": "dist/k-scroll.js",
+  "keywords": [
+    "k-scroll",
+    "kuro"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

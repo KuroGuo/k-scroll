@@ -1,0 +1,68 @@
+.k-scroller-wrapper > .scroll-bar {
+  transition-property: border-right-width, opacity;
+  transition-duration: .2s, .2s;
+  transition-delay: .4s, 1s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1rem;
+  height: 0;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  z-index: 100;
+  border-width: 0;
+  border-style: solid;
+  border-left-width: .2rem;
+  border-left-color: transparent;
+  border-right-color: rgba(0, 0, 0, .3);
+  border-right-width: .3rem;
+  opacity: 0;
+}
+
+.k-scroller-wrapper > .scroll-bar.active,
+.k-scroller-wrapper > .scroll-bar.dragging {
+  border-right-color: rgba(0, 0, 0, .4);
+}
+
+.k-scroller-wrapper > .scroll-bar.hover,
+.k-scroller-wrapper > .scroll-bar.dragging {
+  opacity: 1;
+  border-right-width: .8rem;
+  transition-duration: .2s, 0;
+  transition-delay: 0, 0;
+}
+
+.k-scroller-wrapper.hover > .scroll-bar,
+.k-scroller-wrapper.dragging > .scroll-bar,
+.k-scroller-wrapper.scrolling > .scroll-bar,
+.k-scroller-wrapper.sliding > .scroll-bar {
+  opacity: 1;
+  transition-duration: .2s, 0;
+  transition-delay: 0, 0;
+}
+
+.k-scroller > .pulldown-hint,
+.k-scroller > .pullup-hint {
+  height: 30rem;
+  text-align: center;
+  background-color: #222;
+  position: absolute;
+  color: white;
+  left: 0;
+  right: 0;
+}
+.k-scroller > .pulldown-hint > .content,
+.k-scroller > .pullup-hint > .content {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+}
+.k-scroller > .pulldown-hint {
+  line-height: 56rem;
+  bottom: 100%;
+}
+.k-scroller > .pullup-hint {
+  line-height: 4rem;
+  top: 100%;
+}
