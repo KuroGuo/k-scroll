@@ -2,6 +2,8 @@
 
 ### Quick Examples
 
+[example](http://kuroguo.github.io/k-scroll/example/)
+
 ```html
 <link rel="stylesheet" type="text/css" href="../src/k-scroll.css">
 <div id="list1" class="my-list k-scroller-wrapper">
