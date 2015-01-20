@@ -1,6 +1,6 @@
 ## K-scroll
 
-### Quick Examples
+### Quick Example
 
 <a href="http://kuroguo.github.io/k-scroll/example/" target="_blank">example</a>
 
