@@ -26,10 +26,6 @@
     var lastFrameTime;
     var frameToken;
     var dragEndvScrollTop;
-    var $pullDownHint;
-    var $pullUpHint;
-    var $pullDownHintText;
-    var $pullUpHintText;
     var isDrag;
 
     var currentScrollTop = 0; // 当前纵向滚动值
@@ -37,36 +33,6 @@
 
     scrollBar.classList.add('scroll-bar');
     wrapper.appendChild(scrollBar);
-
-    // scope.model = angular.extend({
-    //   usePullDown: false, // 是否使用下拉，可实现下拉刷新等功能
-    //   usePullUp: false, // 是否使用上拉，可实现上拉加载更多等功能
-    //   emitDragstart: false,
-    //   emitDragend: false
-    // }, scope.model);
-
-    // scope.model.pullDownState = null;
-    // scope.model.pullUpState = null;
-
-    // scope.model.setPullDownHintText = setPullDownHintText;
-    // scope.model.setPullUpHintText = setPullUpHintText;
-
-    // Object.defineProperty(scope.model, 'maxScroll', {
-    //   get: function () {
-    //     return maxScroll;
-    //   }
-    // });
-
-    // if (scope.model.usePullDown) {
-    //   $pullDownHint = $('<div class="pulldown-hint"><span class="content"><span class="text"></span></span></div>');
-    //   scroller.prepend($pullDownHint);
-    //   $pullDownHintText = $pullDownHint.find('.text');
-    // }
-    // if (scope.model.usePullUp) {
-    //   $pullUpHint = $('<div class="pullup-hint"><span class="content"><span class="text"></span></span></div>');
-    //   scroller.append($pullUpHint);
-    //   $pullUpHintText = $pullUpHint.find('.text');
-    // }
 
     var kDrag;
 
@@ -234,7 +200,6 @@
         lastFrameTime = null;
         wrapper.classList.add('sliding');
         slide();
-        // checkTriggerPull();
       }
     }
 
@@ -247,10 +212,6 @@
       }
 
       var wrapper = e.currentTarget;
-
-      // if (scope.model.emitDragstart) {
-      //   scope.$emit('kScrollerDragstart', e);
-      // }
 
       if (e.state > 0) {
         wrapper.classList.add('dragging');
@@ -275,8 +236,6 @@
       vScrollTop = -e.vy;
       currentScrollTop -= e.stepY;
       scrollTo(currentScrollTop, false, false);
-
-      // checkPullStateChange();
     }
 
     function wrapperOnDragend(e) {
@@ -292,12 +251,6 @@
       lastFrameTime = null;
       wrapper.classList.add('sliding');
       slide();
-
-      // checkTriggerPull();
-
-      // if (scope.model.emitDragend) {
-      //   scope.$emit('kScrollerDragend', e);
-      // }
     }
 
     function onMousewheel(e) {
@@ -562,13 +515,6 @@
       frameToken = null;
       Velocity(scroller, 'stop');
     }
-
-    // function setPullDownHintText(text) {
-    //   $pullDownHintText.html(text);
-    // }
-    // function setPullUpHintText(text) {
-    //   $pullUpHintText.html(text);
-    // }
   };
 
   function computeMouseWheelDelta(eventArg) {
