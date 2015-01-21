@@ -518,10 +518,8 @@
   };
 
   function computeMouseWheelDelta(eventArg) {
-    if (eventArg.type == 'DOMMouseScroll' || eventArg.type == 'mousewheel') {
-      return (eventArg.wheelDelta) ? eventArg.wheelDelta / 120 : -(eventArg.detail || 0) / 3;
-    }
-  };
+    return (eventArg.wheelDelta) ? eventArg.wheelDelta / 120 : -(eventArg.detail || 0) / 3;
+  }
 
   if (typeof define === 'function') {
     define('kScroll', function() { return kScroll; });
