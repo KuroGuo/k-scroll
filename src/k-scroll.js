@@ -152,7 +152,6 @@
     }
 
     function scrollBarOnPointerup(e) {
-      var scrollBar = e.currentTarget;
       scrollBar.classList.remove('active');
 
       if (e.type === 'mouseup') {
