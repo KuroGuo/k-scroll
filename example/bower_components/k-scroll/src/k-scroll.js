@@ -367,7 +367,7 @@
         scrollBarHeightPercent = 0;
       }
 
-      scrollBarHeight = Math.max(wrapperHeight * scrollBarHeightPercent, 4);
+      scrollBarHeight = Math.max(wrapperHeight * scrollBarHeightPercent, 56);
     }
 
     function slide(time) {
