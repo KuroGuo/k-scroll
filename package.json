@@ -1,7 +1,7 @@
 {
   "name": "k-scroll",
   "version": "0.0.1",
-  "description": "scroll component",
+  "description": "High performance scroll component.",
   "main": "index.js",
   "directories": {
     "example": "example"

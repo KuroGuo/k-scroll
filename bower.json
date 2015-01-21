@@ -5,7 +5,7 @@
   "authors": [
     "KuroGuo <413298956@qq.com>"
   ],
-  "description": "scroll component",
+  "description": "High performance scroll component.",
   "main": "dist/k-scroll.js",
   "keywords": [
     "k-scroll",
