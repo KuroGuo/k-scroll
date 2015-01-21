@@ -71,7 +71,6 @@
     scrollBar.addEventListener('mousedown', scrollBarOnPointerdown);
     scrollBar.addEventListener('touchend', scrollBarOnPointerup);
     scrollBar.addEventListener('touchcancel', scrollBarOnPointerup);
-    scrollBar.addEventListener('mouseup', scrollBarOnPointerup);
     scrollBar.addEventListener('k.dragstart', scrollBarOnDragstart);
     scrollBar.addEventListener('k.drag', scrollBarOnDrag);
     scrollBar.addEventListener('k.dragend', scrollBarOnDragend);
@@ -153,7 +152,6 @@
     }
 
     function scrollBarOnPointerup(e) {
-      var scrollBar = e.currentTarget;
       scrollBar.classList.remove('active');
 
       if (e.type === 'mouseup') {
