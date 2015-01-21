@@ -49,6 +49,7 @@
     wrapper.addEventListener('touchstart', refreshContext);
 
     wrapper.addEventListener('mouseenter', wrapperOnMouseenter);
+    wrapper.addEventListener('mouseleave', wrapperOnMouseleave);
 
     wrapper.addEventListener('mousedown', _break);
     wrapper.addEventListener('touchstart', _break);
@@ -101,6 +102,7 @@
       wrapper.removeEventListener('touchstart', refreshContext);
 
       wrapper.removeEventListener('mouseenter', wrapperOnMouseenter);
+      wrapper.removeEventListener('mouseleave', wrapperOnMouseleave);
 
       wrapper.removeEventListener('mousedown', _break);
       wrapper.removeEventListener('touchstart', _break);
@@ -186,14 +188,12 @@
       var wrapper = e.currentTarget;
 
       wrapper.classList.add('hover');
-
-      document.addEventListener('mouseleave', wrapperOnMouseleave, true);
     }
 
-    function wrapperOnMouseleave() {
-      wrapper.classList.remove('hover');
+    function wrapperOnMouseleave(e) {
+      var wrapper = e.currentTarget;
 
-      document.removeEventListener('mouseleave', wrapperOnMouseleave, true);
+      wrapper.classList.remove('hover');
     }
 
     function wrapperOnPointerdown(e) {
