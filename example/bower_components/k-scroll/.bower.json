@@ -22,11 +22,11 @@
     "k-drag": "*",
     "velocity": "~1.2.1"
   },
-  "_release": "28517c3410",
+  "_release": "139adf4a59",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "28517c34101eaaf9009e0c0df400232ad6015502"
+    "commit": "139adf4a592e887323e7c8beb48fb97726c9bddd"
   },
   "_source": "git://github.com/KuroGuo/k-scroll.git",
   "_target": "*",

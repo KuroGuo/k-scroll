@@ -180,8 +180,20 @@
       scrollBar.classList.remove('dragging');
     }
 
-    function wrapperOnMouseenter() {
+    function wrapperOnMouseenter(e) {
       resetscrollBarStyle();
+
+      var wrapper = e.currentTarget;
+
+      wrapper.classList.add('hover');
+
+      document.addEventListener('mouseleave', wrapperOnMouseleave, true);
+    }
+
+    function wrapperOnMouseleave() {
+      wrapper.classList.remove('hover');
+
+      document.removeEventListener('mouseleave', wrapperOnMouseleave, true);
     }
 
     function wrapperOnPointerdown(e) {
