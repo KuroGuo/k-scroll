@@ -1,4 +1,4 @@
-## K-drag
+## K-Drag
 
 High performance drag component.
 
@@ -28,7 +28,7 @@ $ bower install k-drag
 
   kDrag.bind(box);
 
-  var x, y;
+  var x = 0, y = 0;
 
   box.addEventListener('k.dragstart', function () {
     console.log('dragstart');

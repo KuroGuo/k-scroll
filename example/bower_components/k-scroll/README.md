@@ -1,4 +1,4 @@
-## K-scroll
+## K-Scroll
 
 High performance scroll component.
 

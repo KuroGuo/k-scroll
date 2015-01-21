@@ -1,4 +1,10 @@
 ;(function (window, document) { 'use strict';
+  window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame 
+                              || window.mozRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  window.cancelAnimationFrame = window.cancelAnimationFrame || window.webkitCancelAnimationFrame
+                              || window.mozCancelAnimationFrame || window.msCancelAnimationFrame;
+
   var kDrag = {}
 
   kDrag.bind = function (element, opts) {
@@ -172,6 +178,7 @@
 
         _event.ctrlKey = e.ctrlKey;
         _event.dragTarget = target;
+        _event.originalEvent = e;
 
         return _event;
       }

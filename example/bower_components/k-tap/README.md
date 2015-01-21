@@ -1,4 +1,4 @@
-## K-tap
+## K-Tap
 
 ### Install
 
