@@ -30,5 +30,6 @@
   },
   "_source": "git://github.com/KuroGuo/k-scroll.git",
   "_target": "*",
-  "_originalSource": "k-scroll"
+  "_originalSource": "k-scroll",
+  "_direct": true
 }
