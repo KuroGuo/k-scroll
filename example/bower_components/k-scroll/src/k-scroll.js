@@ -124,7 +124,6 @@
       scrollBar.removeEventListener('mousedown', scrollBarOnPointerdown);
       scrollBar.removeEventListener('touchend', scrollBarOnPointerup);
       scrollBar.removeEventListener('touchcancel', scrollBarOnPointerup);
-      scrollBar.removeEventListener('mouseup', scrollBarOnPointerup);
       scrollBar.removeEventListener('k.dragstart', scrollBarOnDragstart);
       scrollBar.removeEventListener('k.drag', scrollBarOnDrag);
       scrollBar.removeEventListener('k.dragend', scrollBarOnDragend);
@@ -147,11 +146,19 @@
       e.preventDefault();
       var scrollBar = e.currentTarget;
       scrollBar.classList.add('active');
+
+      if (e.type === 'mousedown') {
+        document.addEventListener('mouseup', scrollBarOnPointerup, true);
+      }
     }
 
     function scrollBarOnPointerup(e) {
       var scrollBar = e.currentTarget;
       scrollBar.classList.remove('active');
+
+      if (e.type === 'mouseup') {
+        document.removeEventListener('mouseup', scrollBarOnPointerup, true);
+      }
     }
 
     function scrollBarOnDrag(e) {
