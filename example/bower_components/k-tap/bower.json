@@ -1,0 +1,22 @@
+{
+  "name": "k-tap",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kuroguo/k-tap",
+  "authors": [
+    "KuroGuo <413298956@qq.com>"
+  ],
+  "description": "tap component",
+  "main": "dist/k-tap.js",
+  "keywords": [
+    "k-tap",
+    "kuro"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
