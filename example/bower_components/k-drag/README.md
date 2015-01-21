@@ -1,5 +1,7 @@
 ## K-drag
 
+High performance drag component.
+
 ### Install
 
 ```bash
