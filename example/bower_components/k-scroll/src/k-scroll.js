@@ -1,4 +1,10 @@
 ;(function (window, document) { 'use strict';
+  window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame 
+                              || window.mozRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  window.cancelAnimationFrame = window.cancelAnimationFrame || window.webkitCancelAnimationFrame
+                              || window.mozCancelAnimationFrame || window.msCancelAnimationFrame;
+  
   var kScroll = {};
 
   kScroll.bind = function (element, opts) {
@@ -340,44 +346,6 @@
 
       if (e.ctrlKey && e.type === 'mousedown') {
         e.preventDefault();
-      }
-    }
-
-    function checkPullStateChange() {
-      var currentPullDownState = scope.model.pullDownState;
-      var currentPullUpState = scope.model.pullUpState;
-      var currentScrollTop = currentScrollTop;
-      if (scope.model.usePullDown && currentScrollTop < -4 && (!scope.model.pullDownState || scope.model.pullDownState === 1 || scope.model.pullDownState === 4)) {
-        scope.model.pullDownState = 1;
-      } else if (scope.model.usePullUp && currentScrollTop > maxScroll + 4 && (!scope.model.pullUpState || scope.model.pullUpState === 1 || scope.model.pullUpState === 4)) {
-        scope.model.pullUpState = 1;
-      } else {
-        scope.model.pullDownState = 0;
-        scope.model.pullUpState = 0;
-      }
-      if (currentPullDownState !== scope.model.pullDownState) {
-        scope.$emit('kScrollerPullDownStateChange');
-      }
-      if (currentPullUpState !== scope.model.pullUpState) {
-        scope.$emit('kScrollerPullUpStateChange');
-      }
-    }
-
-    function checkTriggerPull() {
-      var currentScrollTop = currentScrollTop;
-      if (scope.model.usePullDown && currentScrollTop < -4 && scope.model.pullDownState < 2) {
-        scope.model.pullDownState = 2;
-        scope.$emit('kScrollerPullDownStateChange');
-        scrollTo(-4, true, true, 250, function () {
-          scope.$emit('kScrollerPullDown');
-
-        });
-      } else if (scope.model.usePullUp && currentScrollTop > scope.model.maxScroll + 4 && scope.model.pullUpState < 2) {
-        scope.model.pullUpState = 2;
-        scope.$emit('kScrollerPullUpStateChange');
-        scrollTo(maxScroll + 4, true, true, 250, function () {
-          scope.$emit('kScrollerPullUp');
-        });
       }
     }
 

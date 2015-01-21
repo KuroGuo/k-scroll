@@ -1,5 +1,7 @@
 ## K-scroll
 
+High performance scroll component.
+
 ### Install
 
 ```bash
