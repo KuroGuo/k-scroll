@@ -18,14 +18,13 @@
     "test",
     "tests"
   ],
-  "_release": "f287361123",
+  "_release": "b0b8798050",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "f287361123cdb5848ec84385f220f7bda9c3af7a"
+    "commit": "b0b8798050d0926a88e5db231716db6d04a4fce5"
   },
   "_source": "git://github.com/KuroGuo/k-tap.git",
   "_target": "*",
-  "_originalSource": "k-tap",
-  "_direct": true
+  "_originalSource": "k-tap"
 }

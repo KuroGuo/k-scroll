@@ -68,9 +68,8 @@
       pageY = touch.pageY;
     }
 
-    _event = new Event('k.tap', {
-      bubbles: true  
-    });
+    _event = document.createEvent('HTMLEvents');
+    _event.initEvent('k.tap', true, true);
 
     _event.pageX = pageX;
     _event.pageY = pageY;

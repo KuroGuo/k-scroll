@@ -1,5 +1,11 @@
 ## K-tap
 
+### Install
+
+```bash
+$ bower install k-tap
+```
+
 ### Quick Example
 
 ```html
