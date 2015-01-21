@@ -4,8 +4,8 @@
   "authors": [
     "KuroGuo <413298956@qq.com>"
   ],
-  "description": "drag component",
-  "main": "dist/k-drag.min.js",
+  "description": "High performance drag component.",
+  "main": "dist/k-drag.js",
   "keywords": [
     "k-drag",
     "kuro"
@@ -18,11 +18,11 @@
     "test",
     "tests"
   ],
-  "_release": "b648aa898c",
+  "_release": "0a93745828",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "b648aa898c33bfdfcc733c69038b272079651d5a"
+    "commit": "0a937458286dae0259536c090d054f3d91a92768"
   },
   "_source": "git://github.com/KuroGuo/k-drag.git",
   "_target": "*",

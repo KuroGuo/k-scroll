@@ -330,7 +330,7 @@
     function _break(e, preventTap) {
       if (frameToken) {
         stopAnimation();
-        if (e.type !== 'blur' && Math.abs(vScrollTop) > 0.01) {
+        if (e.type !== 'blur' && Math.abs(vScrollTop) > 0.14) {
           e.stopPropagation();
           e.preventDefault();
         }

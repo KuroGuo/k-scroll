@@ -4,7 +4,7 @@
   "authors": [
     "KuroGuo <413298956@qq.com>"
   ],
-  "description": "scroll component",
+  "description": "High performance scroll component.",
   "main": "dist/k-scroll.js",
   "keywords": [
     "k-scroll",
@@ -22,11 +22,11 @@
     "k-drag": "*",
     "velocity": "~1.2.1"
   },
-  "_release": "c554c59a45",
+  "_release": "d2349ce67e",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "c554c59a45641270f930e3e5984bd4a7612587da"
+    "commit": "d2349ce67e9949ac8b9940be25925dcdd85c2d91"
   },
   "_source": "git://github.com/KuroGuo/k-scroll.git",
   "_target": "*",

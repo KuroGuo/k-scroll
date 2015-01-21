@@ -1,14 +1,7 @@
 {
   "name": "k-scroll",
   "version": "0.0.1",
-  "description": "scroll component",
-  "main": "index.js",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "High performance scroll component.",
   "repository": {
     "type": "git",
     "url": "https://github.com/kuroguo/k-scroll"

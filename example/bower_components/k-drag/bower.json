@@ -1,12 +1,12 @@
 {
   "name": "k-drag",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/kuroguo/k-drag",
   "authors": [
     "KuroGuo <413298956@qq.com>"
   ],
-  "description": "drag component",
-  "main": "dist/k-drag.min.js",
+  "description": "High performance drag component.",
+  "main": "dist/k-drag.js",
   "keywords": [
     "k-drag",
     "kuro"
