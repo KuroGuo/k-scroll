@@ -41,8 +41,8 @@
     else if (window.kDrag)
       kDrag = window.kDrag;
 
-    kDrag.bind(wrapper);
-    kDrag.bind(scrollBar);
+    var wrapperDrag = kDrag.bind(wrapper);
+    var scrollBarDrag = kDrag.bind(scrollBar);
    
     wrapper.addEventListener('mouseenter', refreshContext);
     wrapper.addEventListener('mousedown', refreshContext);
@@ -97,6 +97,9 @@
     };
 
     function unbind() {
+      wrapperDrag.unbind();
+      scrollBarDrag.unbind();
+      
       wrapper.removeEventListener('mouseenter', refreshContext);
       wrapper.removeEventListener('mousedown', refreshContext);
       wrapper.removeEventListener('touchstart', refreshContext);
