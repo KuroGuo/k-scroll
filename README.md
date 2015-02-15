@@ -30,6 +30,14 @@ $ bower install k-scroll
 <script>
   var list = document.querySelector('#list');
 
-  kScroll.bind(list);
+  kScroll.bind(list, {
+    // default options
+    animationDuration: 200, 
+    animationEasing: [0, 0, 0.58, 1],
+    speed: 100,
+    allowMouseDragScroll: true,
+    checkOnResize: true,
+    bindKey: true
+  });
 </script>
 ```
