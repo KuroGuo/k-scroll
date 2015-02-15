@@ -503,8 +503,10 @@
     return (eventArg.wheelDelta) ? eventArg.wheelDelta / 120 : -(eventArg.detail || 0) / 3;
   }
 
-  if (typeof define === 'function') {
-    define('kScroll', function() { return kScroll; });
+  if (typeof module !== 'undefined' && typeof exports === 'object') {
+    module.exports = kScroll;
+  } else if (typeof define === 'function' && define.amd) {
+    define(function() { return kScroll; });
   } else {
     window.kScroll = kScroll;
   }
